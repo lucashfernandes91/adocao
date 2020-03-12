@@ -1,3 +1,6 @@
 env
-db.sqlit3
 anotacoes.txt
+*sqlite3
+.idea
+anotacoes.txt
+*.pyc
