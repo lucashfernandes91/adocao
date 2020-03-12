@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class adocao_temporaria(models.Model):
     nome = models.CharField(max_length=40)
     cidade = models.CharField(max_length=50)
@@ -14,5 +15,3 @@ class adocao_temporaria(models.Model):
         verbose_name_plural = "adoções temporárias"
 
 
-    def __str__(self):
-        return self.nome
