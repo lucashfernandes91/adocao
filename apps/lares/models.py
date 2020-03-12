@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Lar(models.Model):
-    porte_opcoes = (
+    porte_desejado = (
         ("P", "Pequeno"),
         ("M", "Médio"),
         ("G", "Grande"),
@@ -19,7 +19,7 @@ class Lar(models.Model):
     cidade = models.CharField(max_length=50)
     telefone = models.CharField(max_length=15, null=False, blank=False)
     email = models.EmailField(max_length=50, unique=True)
-    porte_desejado = models.CharField(max_length=1, choices=porte_opcoes, null=False, blank=False)
+    porte_desejado = models.CharField(max_length=1, choices=porte_desejado, null=False, blank=False)
     pet_especial = models.CharField(max_length=1, choices=pet_especial, null=False, blank=False)
 
 

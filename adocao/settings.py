@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apps.ongs',
     'apps.adocoes_temporarias',
     'apps.lares',
+    'apps.pets',
 ]
 
 MIDDLEWARE = [

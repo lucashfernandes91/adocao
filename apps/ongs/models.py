@@ -13,3 +13,6 @@ class Ong(models.Model):
         verbose_name = "ong"
         verbose_name_plural = "ongs"
 
+
+    def __str__(self):
+        return self.nome

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from apps.adocoes_temporarias.models import adocao_temporaria
+from apps.adocoes_temporarias.models import Adocao_temporaria
 
 # Register your models here.
-admin.site.register(adocao_temporaria)
+admin.site.register(Adocao_temporaria)
