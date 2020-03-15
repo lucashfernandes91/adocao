@@ -12,6 +12,7 @@ class Ong(models.Model):
     class Meta:
         verbose_name = "ong"
         verbose_name_plural = "ongs"
+        ordering = ['nome']
 
 
     def __str__(self):

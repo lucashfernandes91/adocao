@@ -26,6 +26,7 @@ class Lar(models.Model):
     class Meta:
         verbose_name = "Lar"
         verbose_name_plural = "Lares"
+        ordering = ['nome']
 
 
     def __str__(self):
