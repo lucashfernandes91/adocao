@@ -7,6 +7,7 @@ class Ong(models.Model):
     telefone = models.CharField(max_length=15)
     email = models.EmailField(max_length=50, unique=True)
     cidade = models.CharField(max_length=50)
+    criado_em = models.DateField(auto_now_add=True)
 
 
     class Meta:

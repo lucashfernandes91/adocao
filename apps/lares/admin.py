@@ -1,5 +1,9 @@
 from django.contrib import admin
 from apps.lares.models import Lar
 
-# Register your models here.
-admin.site.register(Lar)
+
+class LarAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'telefone', 'cidade', 'porte_desejado')
+
+
+admin.site.register(Lar, LarAdmin)
